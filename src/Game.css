@@ -1,0 +1,91 @@
+.game {
+    position: relative;
+	width: 70%;
+	height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    gap: 0.4em;
+}
+
+.question {
+    width: 90%;
+    padding: 1.2em;
+    height: fit-content;
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.answers {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3em;
+}
+
+.answer {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    text-align: center;
+    border-radius: 8px;
+    font-size: large;
+    cursor: pointer;
+    width: auto;
+}
+
+.answer:hover {
+	background-color: rgba(187, 187, 187, 0.3);
+}
+
+.answer.selected {
+	background-color: rgba(255, 166, 0, 0.3);
+}
+
+.answer.correct {
+	background-color: rgba(38, 254, 0, 0.3);
+}
+
+.final {
+    width: fit-content;
+    height: fit-content;
+	background-color: rgba(255, 166, 0, 0.5);
+    font-size: x-large;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.final-btn {
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.2em 1em;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.final-btn:hover {
+    background-color: rgba(203, 203, 203, 0.3);
+}
+
+.btns {
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.disabled {
+    cursor: default;
+}
+
+
+
+
